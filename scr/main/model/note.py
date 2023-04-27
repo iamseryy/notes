@@ -6,6 +6,5 @@ class Note:
         self.create_date = create_date
 
     def __str__(self):
-        return self.id + ";" + self.header + ";" + self.body + ";" + self.create_date
+        return f'{self.id};{self.header};{self.body};{self.create_date}'
 
-note = Note(1, "test", "sdfasdf", "adsfasdf")
