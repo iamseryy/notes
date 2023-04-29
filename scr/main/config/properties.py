@@ -1,3 +1,3 @@
 from typing import Final
 
-FILE_NOTES: Final = 'scr/main/resources/notes.csv'
+FILE_NOTES: Final = 'resources/notes.csv'
