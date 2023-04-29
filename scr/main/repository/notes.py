@@ -15,7 +15,7 @@ class Notes:
         self._notes.append(note)
         self._notes.sort(key=lambda item: item.id)
         data = [[item.id, item.header, item.body, item.create_date] for item in self._notes]
-        with open(FILE_NOTES, 'w', newline='') as file:
+        with open(FILE_NOTES, 'w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file, delimiter="|")
             writer.writerows(data)
 
