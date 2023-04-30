@@ -33,7 +33,7 @@ class Notes:
             return
 
         found_index = self._find_index_by_id(notes, id)
-        if not found_index:
+        if found_index == -1:
             return
         else:
             return notes[found_index]
@@ -51,7 +51,7 @@ class Notes:
             mid = (low + high) // 2
 
         if low > high:
-            return
+            return -1
         else:
             return mid
 
