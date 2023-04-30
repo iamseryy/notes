@@ -29,6 +29,9 @@ class Notes:
             writer.writerows(data)
 
     def note_binary_search_by_id(self, notes, id):
+        if not notes:
+            return
+
         found_index = self._find_index_by_id(notes, id)
         if not found_index:
             return
