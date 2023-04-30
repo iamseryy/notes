@@ -2,9 +2,6 @@ from scr.main.view.ui.user_interface import User_interface
 
 
 class Menu:
-    def __init__(self):
-        pass
-
     def processing(self, menu_header, menu_item_list):
         while True:
             self._ui.output(f'{menu_header}\n')
